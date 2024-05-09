@@ -1,11 +1,17 @@
 import React from 'react';
-import { NavigationContainer } from '@react-navigation/native';
-import AuthNavigator from './src/navigate/AuthNavigator';
-//import MainNavigator from './src/navigate/MainNavigator';
+import { StyleSheet, Text, View } from 'react-native';
+
+import AuthFlow from './AuthFlow';
 export default function App() {
   return (
-    <NavigationContainer>
-      <AuthNavigator />
-    </NavigationContainer>
+    <AuthFlow />
   );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+});

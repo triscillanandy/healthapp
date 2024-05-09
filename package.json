@@ -9,8 +9,14 @@
     "web": "expo start --web"
   },
   "dependencies": {
+    "@emotion-icons/material": "^3.14.0",
+    "@emotion-icons/material-outlined": "^3.14.0",
+    "@emotion-icons/material-rounded": "^3.14.0",
+    "@emotion-icons/material-twotone": "^3.14.0",
+    "@react-native-async-storage/async-storage": "^1.23.1",
     "@react-navigation/bottom-tabs": "^6.5.20",
     "@react-navigation/native": "^6.1.17",
+    "@react-navigation/native-stack": "^6.9.26",
     "@react-navigation/stack": "^6.3.29",
     "expo": "^50.0.17",
     "expo-status-bar": "~1.11.1",

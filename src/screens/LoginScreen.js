@@ -3,14 +3,23 @@ import { TextInput, View, StyleSheet, Text,TouchableOpacity, SafeAreaView ,Image
 import Icon from '@expo/vector-icons/AntDesign';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 
+
 const LoginScreen = ({ navigation }) => {
   const [username, setName] = useState('');
   const [password, setPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
-
+ 
   const toggleShowPassword = () => {
     setShowPassword(!showPassword);
   };
+
+ 
+  const handleLogin = () => {
+    // Perform authentication logic here
+    // If authentication is successful, navigate to MainNavigator
+    navigation.navigate('Home');
+  };
+  
 
   return (
     <SafeAreaView>
@@ -56,7 +65,7 @@ const LoginScreen = ({ navigation }) => {
 
         <TouchableOpacity
           style={styles.loginButton}
-          onPress={() => {}}
+          onPress={handleLogin} 
         >
           <Text style={styles.loginButtonText}>Login</Text>
         </TouchableOpacity>
